@@ -1,3 +1,4 @@
+
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
@@ -23,7 +24,8 @@ class MobileNavbar {
       this.mobileMenu.classList.toggle(this.activeClass);
       this.animateLinks();
     }
-  
+
+    // adicionando butão de click
     addClickEvent() {
       this.mobileMenu.addEventListener("click", this.handleClick);
     }
